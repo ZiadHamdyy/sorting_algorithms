@@ -22,10 +22,23 @@ void _swap(int *x, int *y)
 void selection_sort(int *array, size_t size)
 {
 	int min;
-	size_t i, j;
+	size_t i, j, k;
+	int sorted = 1;
 
 	if (array == NULL)
 		return;
+
+	for (k = 0; k < size - 1; i++)
+	{
+		if (array[k] > array[k + 1])
+		{
+			sorted = 0;
+			break;
+		}
+	}
+	if (sorted)
+		return;
+
 	for (i = 0; i < size - 1; i++)
 	{
 		min = i;
