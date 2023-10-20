@@ -1,5 +1,9 @@
 #include "sort.h"
 /**
+ * _swap - ..........
+ * @x:first element.
+ * @y:second element.
+ * Return:void.
  */
 void _swap(int *x, int *y)
 {
@@ -10,11 +14,15 @@ void _swap(int *x, int *y)
 	*y = z;
 }
 /**
+ * selection_sort - ..........
+ * @array:unsorted array.
+ * @size:size of the array.
+ * Return:void
  */
 void selection_sort(int *array, size_t size)
 {
 	int min;
-	size_t i , j;
+	size_t i, j;
 
 	for (i = 0; i < size - 1; i++)
 	{
