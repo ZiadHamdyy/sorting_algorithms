@@ -21,30 +21,16 @@ void _swap(int *x, int *y)
  */
 void selection_sort(int *array, size_t size)
 {
-	int min;
-	size_t i, j, k;
-	int sorted = 1;
+	size_t i, j, min;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return;
-
-	for (k = 0; k < size - 1; i++)
-	{
-		if (array[k] > array[k + 1])
-		{
-			sorted = 0;
-			break;
-		}
-	}
-	if (sorted)
-		return;
-
 	for (i = 0; i < size - 1; i++)
 	{
 		min = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[j] < array[min])
+			if (array[j] < array[min] || (array[j] == array[min] && j < min))
 			{
 				min = j;
 			}
