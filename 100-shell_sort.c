@@ -5,7 +5,6 @@
  * @array: Array.....
  * @size: nums of array..
  *
- * Return: Null
  */
 void shell_sort(int *array, size_t size)
 {
@@ -14,7 +13,7 @@ void shell_sort(int *array, size_t size)
 
 	if (array == NULL || size == 0)
 		return;
-
+	{
 		gap = 1;
 		while (gap < size)
 			gap = gap * 3 + 1;
@@ -30,6 +29,7 @@ void shell_sort(int *array, size_t size)
 			}
 			print_array(array, size);
 		}
+	}
 }
 
 /**
