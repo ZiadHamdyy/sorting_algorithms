@@ -32,3 +32,19 @@ void shell_sort(int *array, size_t size)
 		}
 	}
 }
+
+/**
+ * swap_integers - Swap two integers.
+ * @x: Pointer to the first integer.
+ * @y: Pointer to the second integer.
+ *
+ * Return: void
+ */
+void swap_integers(int *x, int *y)
+{
+	int z;
+
+	z = *x;
+	*x = *y;
+	*y = z;
+}
