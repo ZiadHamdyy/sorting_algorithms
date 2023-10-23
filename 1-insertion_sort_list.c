@@ -4,6 +4,7 @@
  * @list:unsorted list.
  * Return:void.
  */
+
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *ptr;
@@ -22,6 +23,7 @@ void insertion_sort_list(listint_t **list)
 		current = current->next;
 	}
 }
+
 /**
  * swap_nodes - ..............
  * @list:unsorted list.
