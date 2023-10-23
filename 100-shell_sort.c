@@ -1,11 +1,11 @@
 #include "sort.h"
-
 /**
  * shell_sort - Shell sort algorithm
  * @array: Array.....
  * @size: nums of array..
  *
  */
+
 void shell_sort(int *array, size_t size)
 {
 	int temp;
@@ -39,6 +39,7 @@ void shell_sort(int *array, size_t size)
  *
  * Return: void
  */
+
 void swap_integers(int *x, int *y)
 {
 	int z;
