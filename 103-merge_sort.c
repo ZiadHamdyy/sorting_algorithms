@@ -9,6 +9,7 @@
  * @size:size of the array.
  * Return:void.
  */
+
 void merge(int *array, int *left, int left_size, int *right,
 		int right_size, size_t size)
 {
@@ -49,6 +50,7 @@ void merge(int *array, int *left, int left_size, int *right,
 	printf("[Done]: ");
 	print_array(array, size);
 }
+
 /**
  * merge_sort - ................
  * @array: unsorted array.
