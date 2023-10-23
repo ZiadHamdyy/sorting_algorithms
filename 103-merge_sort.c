@@ -1,4 +1,6 @@
 #include "sort.h"
+
+
 /**
  * merge - .........
  * @array:unsorted array.
@@ -50,13 +52,13 @@ void merge(int *array, int *left, int left_size, int *right,
 	printf("[Done]: ");
 	print_array(array, size);
 }
-
 /**
- * merge_sort - ................
- * @array: unsorted array.
+ * merge_sort - bla bla...
+ * @array: array.
  * @size:size of the array.
  * Return:void.
  */
+
 void merge_sort(int *array, size_t size)
 {
 	int middle = size / 2;
