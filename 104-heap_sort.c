@@ -1,10 +1,12 @@
 #include "sort.h"
+
 /**
  * _swap - ..........
  * @x:first element.
  * @y:second element.
  * Return:void.
  */
+
 void _swap(int *x, int *y)
 {
 	int z;
@@ -13,6 +15,7 @@ void _swap(int *x, int *y)
 	*x = *y;
 	*y = z;
 }
+
 /**
  * heapify - ..........
  * @array:unsorted array.
@@ -38,6 +41,7 @@ void heapify(int *array, int n, int i, size_t size)
 		heapify(array, n, max, size);
 	}
 }
+
 /**
  * BuildHeap - .............
  * @array:unsorted array.
